@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM_Form Task</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" href="https://static.thenounproject.com/png/2034112-200.png" type="image/png" />
+</head>
+<body>
+
+    <div>
+    <h1 id="title">DOM Manipulation with Form</h1>
+    <p id="description"></p>
+    </div>
+
+    <form id="form">
+        <div class="form-group">
+        <label for="first-name">First Name :</label>
+        <input type="text" id="first-name" placeholder="First-Name" required>
+
+        <label for="last name">Last Name :</label>
+        <input type="text" id="last-name" name="lastname" placeholder="Last-Name" required>
+
+        <label for="address">Address :</label>
+        <textarea id="address" name="Address" placeholder="Address" required></textarea><br>
+
+        <label for="pincode">Pincode :</label>
+        <input type="text" id="pincode" name="pincode" placeholder="Pincode" required><br>
+
+        <label>Gender:</label>
+        <label for="male">
+        <input type="radio" id="male" name="gender" value="male" required> Male
+        </label>
+        <label for="female">
+        <input type="radio" id="female" name="gender" value="female" required> Female
+        </label><br>
+
+        <label for="food-choice">Choice of Food:</label>
+          <input type="checkbox" name="food1" id="Pizza" value="Pizza">          <label for="Pizza">Pizza</label>
+
+
+          <input type="checkbox" name="food2" id="Berger" value="Berger">
+          <label for="Berger">Berger</label>
+
+          <input type="checkbox" name="food3" id="Chilli items" value="Chilli items">
+          <label for="Chilli items">Chilli items</label>
+
+          <input type="checkbox" name="food4" id="veg items" value="veg items">
+          <label for="veg items">Veg items</label>
+
+          <input type="checkbox" name="food5" id="nonveg items" value="nonveg items">
+          <label for="nonveg items">Nonveg items</label><br><br><br>
+
+        <label for="state">State :</label>
+        <input type="text" id="state" name="state" placeholder="State" required><br>
+
+        <label for="country">Country :</label>
+        <input type="text" id="country" name="country" placeholder="Country" required><br>
+
+
+        <button type="button" class="btn btn-primary" id="submit" onclick="submitForm()">Submit</button>
+        </div>
+    </form>
+
+
+    <table id="dataTable" class="table">
+        <thead>
+            <tr>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Address</th>
+                <th>Pincode</th>
+                <th>Gender</th>
+                <th>Choice of Food</th>
+                <th>State</th>
+                <th>Country</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Table data will be inserted here dynamically -->
+        </tbody>
+    </table>
+
+
+    <script src="https://app.zenclass.in/sheets/v1/js/zen/suite/bundle.js"></script>
+    <script src="./script.js"></script>
+</body>
+</html>
